@@ -1,9 +1,9 @@
+import Header from './components/header/Header';
+
 const App = props => {
   return (
     <>
-      <header className="fixed bg-white">
-        <nav className="container"></nav>
-      </header>
+      <Header />
       <main></main>
       <footer></footer>
     </>
