@@ -5,7 +5,7 @@ const Hamburger = props => {
       className={`
         hamburger relative cursor-pointer h-4 w-5
         ${props.className}
-        md:hidden
+        lg:hidden
       `}
       aria-label="Click to open navigation menu."
       onClick={props.onClick}

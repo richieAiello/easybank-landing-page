@@ -12,13 +12,14 @@ const Nav = props => {
   const [hidden, setHidden] = useState(true);
   const [loading, setLoading] = useState(false);
 
-  const tablet = useMediaQuery('(min-width: 768px)');
+  const desktop = useMediaQuery('(min-width: 1440px)');
 
   useEffect(() => {
-    if (tablet) {
+    if (desktop) {
       setMenuVisibility(false);
+      setHidden(true);
     }
-  }, [tablet]);
+  }, [desktop]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -72,7 +73,7 @@ const Nav = props => {
         })}
         onClick={handleHamburgerClick}
       />
-      <a href="#" className="btn hidden md:block">
+      <a href="#" className="btn hidden lg:block">
         Request Invite
       </a>
     </nav>
